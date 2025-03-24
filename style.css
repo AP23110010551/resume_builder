@@ -1,0 +1,95 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Times New Roman', Tahoma, Geneva, Verdana, sans-serif;
+            background: #eef1f6;
+            padding: 20px;
+            line-height: 1.5;
+        }
+        h1 {
+            text-align: center;
+            color: #0056b3;
+            margin-bottom: 30px;
+            font-size: 36px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 550px;
+            margin: auto;
+            transition: 0.3s;
+        }
+        .container:hover {
+            transform: scale(1.01);
+        }
+        .input-field, .text-area {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 16px;
+            border: 1px solid #bbb;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: 0.25s;
+        }
+        .input-field:focus, .text-area:focus {
+            border-color: #0056b3;
+            box-shadow: 0 0 6px rgba(0, 86, 179, 0.3);
+        }
+        .text-area {
+            resize: vertical;
+            min-height: 100px;
+        }
+        button {
+            background: #0056b3;
+            color: #fff;
+            border: none;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 17px;
+            cursor: pointer;
+            transition: 0.3s;
+            width: 100%;
+        }
+        button:hover {
+            background: #003f80;
+            transform: scale(1.05);
+        }
+        h2 {
+            color: #222;
+            margin-bottom: 15px;
+            border-bottom: 3px solid #0056b3;
+            padding-bottom: 8px;
+        }
+        p {
+            color: #444;
+            margin: 8px 0;
+        }
+        strong {
+            color: #111;
+        }
+        span {
+            color: #666;
+        }
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Resume Builder</h1>
+    <div id="resumeForm">
+        <!-- Your form content would go here -->
+    </div>
+        <!-- Your resume output content would go here -->
+    </div>
+</body>

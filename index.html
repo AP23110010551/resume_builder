@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Resume Builder</title>
+</head>
+<body>
+    <h1>RESUME BUILDER</h1>
+    <script src="script.js"></script>
+    <form id="resumeForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="text" id="email" placeholder="Your Email" required>
+        <textarea id="skills" placeholder="Your Skills (comma-separated)" rows="3" required></textarea>
+        <textarea id="experience" placeholder="Your Experience" rows="5" required></textarea>
+        <button type="button" onclick="generateResume()">Generate Resume</button>
+    </form>
+
+    <div id="resume">
+        <h2>Resume Preview</h2>
+        <p><strong>Name: </strong><span id="previewName"></span></p>
+        <p><strong>Email: </strong><span id="previewEmail"></span></p>
+        <p><strong>Skills: </strong><span id="previewSkills"></span></p>
+        <p><strong>Experience: </strong><span id="previewExperience"></span></p>
+        <button onclick="downloadResume()">Download as PDF</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</body>
+</html>
